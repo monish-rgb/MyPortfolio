@@ -1,0 +1,133 @@
+.page-title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #e0f0ff;
+    padding: 5px 5px;
+  }
+  .works-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+    transform: rotate(0deg);
+    display: inline-block;
+    color: #e0f0ff;
+  }
+
+  /*------*/
+  .section-title {
+    position: relative;
+    text-align: left;
+    font-size: 2rem;
+    color: #e0e3e2;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .projects-section {
+    text-align: center;
+    background: #101414;
+    padding: 50px 0;
+  
+      span {
+        color: #004f4f;
+      }
+    }
+
+    swiper-container {
+      width: 90%;
+      margin: auto;
+    }
+  
+    swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+      width: 300px;
+      transition: 0.3s;
+      
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 255, 247, 0.3);
+      }
+  
+      .project-image {
+        width: 98%;
+        height: 130px;
+        object-fit: cover;
+      }
+  
+      .project-info {
+        padding: 15px;
+  
+        h3 {
+          font-size: 0.9rem;
+          font-weight: bold;
+          color: white;
+          margin-bottom: 5px;
+        }
+  
+        p {
+          font-size: 0.7rem;
+          color: #b3b3b3;
+          margin-bottom: 10px;
+        }
+  
+        .project-links {
+          display: flex;
+          gap: 10px;
+  
+          a {
+            font-size: 0.9rem;
+            color: #a855f7;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+  
+            i {
+              font-size: 1rem;
+            }
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+  }
+
+  .icon{
+    font-size: 1.5rem;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #e0e3e2;
+    &:hover {
+      transform: scale(1.2);
+      color: #004f4f;
+    }
+  }
+
+
+  

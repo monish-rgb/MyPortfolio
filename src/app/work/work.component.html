@@ -1,0 +1,33 @@
+<section class="projects-section" id="works">
+    <div class="section-title">
+      <h4>Projects.</h4>
+    </div> 
+    <swiper-container
+    effect="cube" 
+    cube-effect-shadow="true"
+    pagination="true"
+    cube-effect-slide-shadows="true"
+    cube-effect-shadow-scale="0.9"
+    autoplay-delay="2000"
+    autoplay-disable-on-interaction="false"
+    #swiperEl
+    >
+      <swiper-slide *ngFor="let work of works" (mouseenter)="pauseSwiper()" (mouseleave)="resumeSwiper()">
+        <div class="project-card">
+          <img [src]="work.image" [alt]="work.title" class="project-image" />
+          <div class="project-info">
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.description }}</p>
+            <div>
+              <a [href]="work.link"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+            </div>
+          </div>
+        </div>    
+      </swiper-slide>
+    </swiper-container>
+  </section>
+  
+  
+  
+  
+    
