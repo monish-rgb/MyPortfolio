@@ -9,10 +9,10 @@
     }
   }
 .container{
-    background-color: #101414;  
     display: flex;
     justify-content:left;
     align-items: center;
+    background: linear-gradient(180deg, #0a0a0a 60%, #0f1e0f 100%);
 }
 .text-left-container {
     display: flex;
@@ -99,6 +99,15 @@
     margin-bottom: 3rem;
 }
 
+.floating-squares {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #6effa3; /* Light green */
+  opacity: 0.7;
+  animation: float 5s infinite alternate;
+}
+
 #dynamic-text {
     border-right: 2px solid #004f4f;
     padding-right: 5px;
@@ -109,4 +118,9 @@
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: #00dddd; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-30px) rotate(45deg); }
 }

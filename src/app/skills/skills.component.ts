@@ -31,26 +31,13 @@ export class SkillsComponent {
   facloud=faCloud
   fadb=faDatabase
   faNode=faNodeJs
-  skills = [
-    {
-      category: "Programming Languages",
-      items: ["C++", "Python", "Java", "JavaScript", "TypeScript"],
-    },
-    {
-      category: "Web Technologies",
-      items: ["HTML5", "CSS", "React JS", "Node JS"],
-    },
-    {
-      category: "Cloud Platforms",
-      items: ["Amazon Web Services", "GCP", "Azure"],
-    },
-    {
-      category: "Databases",
-      items: ["MySQL", "MongoDB"],
-    },
-    {
-      category: "Frameworks and Tools",
-      items: ["Git", "TensorFlow", "React", "Angular", "Flask","postman"],
-    },
+  techStack = [
+    { name: 'Python', image: 'assets/python.png', delay: '0s' },
+    { name: 'Java', image: 'assets/java.png', delay: '0.2s' },
+    { name: 'JavaScript', image: 'assets/javascript.png', delay: '0.4s' },
+    { name: 'Scala', image: 'assets/scala.png', delay: '0.6s' },
+    { name: 'SQL', image: 'assets/sql.png', delay: '0.8s' },
+    { name: 'MongoDB', image: 'assets/mongodb.png', delay: '1s' },
+    { name: 'Database', image: 'assets/database.png', delay: '1.2s' }
   ];
 }

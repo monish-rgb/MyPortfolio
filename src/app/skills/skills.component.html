@@ -1,6 +1,16 @@
-<div class="skills-page">
+<!-- <div class="skills-page">
     <h2 class="page-title">My SKILLS.
         <span class="arrow">↘</span>
     </h2>   
-</div>
+</div> -->
+
+<div class="tech-stack">
+    <h1 class="title">My Skills.</h1>
+    <div class="icons-container">
+      <div *ngFor="let tech of techStack" class="icon" [ngStyle]="{'animation-delay': tech.delay}">
+        <img [src]="tech.image" [alt]="tech.name">
+      </div>
+    </div>
+  </div>
+  
   
