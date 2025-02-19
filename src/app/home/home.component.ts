@@ -6,7 +6,7 @@ import Typed from 'typed.js';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-home',
   imports: [RouterLink,FontAwesomeModule],
@@ -21,12 +21,10 @@ export class HomeComponent implements OnInit {
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faFileAlt = faFileAlt
-  resumeUrl: SafeUrl | null = null;
+  
 
   roles: string[] = [ "Coding Enthusiast", " Software Developer", " Backend Engineer", " Fullstack Developer", " Cloud Enthusiast"];
   ngOnInit(): void {
-    const resumePath = 'assets/MonishDevineni_Resume.pdf'; //Resume URL
-    this.resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(resumePath);
     var options = {
       strings: ["Coding Enthusiast", " Software Developer", " Backend Engineer", " Fullstack Developer", " Cloud Enthusiast"],
       typeSpeed: 50,
@@ -38,9 +36,11 @@ export class HomeComponent implements OnInit {
   }
 
   seeResume() {
-    if (this.resumeUrl) {
+    
+    const resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl('assets/MonishDevineni_Resume.pdf');
+    if (resumeUrl) {
       // Open the resume in a new tab:
-      window.open(this.resumeUrl as string, '_blank');
+      window.open('assets/MonishDevineni_Resume.pdf', '_blank');     
     } else {
       alert("Resume not available."); // Or handle the case where the URL is not set
     }

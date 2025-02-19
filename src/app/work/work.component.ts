@@ -24,7 +24,7 @@ export class WorkComponent implements AfterViewInit{
       title: 'Portfolio Website',
       description: 'A modern and sleek portfolio website built with Angular and MongoDB.',
       image: '/assets/portfolio.png',
-      link: 'https://yourportfolio.com'
+      link: 'https://monishdevineni.netlify.app/'
     },
     {
       title: 'Image Captioning Web App using Gemini',
