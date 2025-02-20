@@ -19,15 +19,17 @@
   animation: bounce 1.5s infinite;
 }
 
-.icon{
-  font-size: 1.5rem;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  color: #027070;
-  &:hover {
-    transform: scale(1.2);
-    color: #101414;
-  }
+.icon {
+  width: 5em;
+  height: 5em;
+  background: radial-gradient(circle, #6effa3,#50f8c0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: float 3s infinite ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 /***************************************/
@@ -56,18 +58,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, #e0e0e0, #b0b0b0);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  animation: float 3s infinite ease-in-out;
 }
 
 .icon img {

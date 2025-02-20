@@ -8,7 +8,7 @@
     <h1 class="title">My Skills.</h1>
     <div class="icons-container">
       <div *ngFor="let tech of techStack" class="icon" [ngStyle]="{'animation-delay': tech.delay}">
-        <img [src]="tech.image" [alt]="tech.name">
+        <fa-icon [icon]="tech.icon" ></fa-icon>
       </div>
     </div>
   </div>
