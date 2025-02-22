@@ -1,4 +1,4 @@
-<nav [ngClass]="isScrolled ? 'navbar-scrolled' : 'navbar-top'">
+<nav [ngClass]="isScrolled ? 'navbar-scrolled' : 'navbar-top'" @slideInAnimation>
     <ul class="nav-links">
         <li>
             <a routerLink="/home" fragment="home" routerLinkActive="text-light" style="gap: 15px;">

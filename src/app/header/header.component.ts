@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component,HostListener } from '@angular/core';
 import { RouterLinkActive, RouterOutlet, RouterLink,Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { slideInAnimation } from '../../animations';
 import { faHome,faPerson,faEnvelope,faCode,faBriefcase } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ import { faHome,faPerson,faEnvelope,faCode,faBriefcase } from '@fortawesome/free
     FontAwesomeModule
   ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  animations: [slideInAnimation]
 })
 export class HeaderComponent {
 
