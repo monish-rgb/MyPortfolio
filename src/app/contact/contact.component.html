@@ -1,3 +1,65 @@
-<section id="contact">
-<p>contact works!</p>
-</section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="contact-title">Contact<span>.</span></h2>
+            <p class="contact-subtitle">Connect with Me</p>
+            <p class="contact-description">
+              I'm always excited to collaborate and explore new opportunities, feel free to reach out.
+            </p>
+      
+            <div class="contact-links">
+              <div class="contact-item">
+                <a href="https://www.linkedin.com/in/monish-devineni/" class="icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p>monish-devineni</p>
+                </div>
+              </div>
+      
+              <div class="contact-item">
+                <a href="https://github.com/monish-rgb"><fa-icon [icon]="faGithub" class="icon"></fa-icon></a>
+                <div>
+                  <h3>GitHub</h3>
+                  <p>monish-rgb</p>
+                </div>
+              </div>
+      
+              <div class="contact-item">
+                <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+                <div>
+                  <h3>Email</h3>
+                  <p>{{email}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="contact-form">
+            <form [formGroup]="contactForm" (ngSubmit)="send()">
+            
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your email"  formControlName="email"/>
+              <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)">
+                <small *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</small>
+                <small *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email format.</small>
+              </div>
+            
+
+            
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject" formControlName="subject"/>
+            
+           
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Your message" formControlName="message"></textarea>
+              <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)">
+                <small>Message is required.</small>
+              </div>
+            
+
+              <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
