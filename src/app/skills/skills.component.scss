@@ -65,6 +65,35 @@
   height: auto;
 }
 
+.buttons {
+  display: flex; /* Arrange buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  justify-content: left; /* Center buttons horizontally */
+  padding-bottom: 20px;
+}
+
+.buttons button {
+  background: linear-gradient(to right, #3ff7aa, #025e41); /* Gradient background */
+  color: black;
+  padding: 10px 15px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth background transition */
+  display: flex; /* Use flexbox for icon and text alignment */
+  align-items: center; /* Vertically align icon and text */
+  gap: 10px; /* Space between icon and text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.buttons button:hover {
+  background: linear-gradient(to right,#626263,#f5f4f6); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow */
+}
+
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-15px); }

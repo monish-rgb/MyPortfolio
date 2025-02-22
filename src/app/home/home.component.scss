@@ -109,15 +109,15 @@
 }
 
 #dynamic-text {
-    border-right: 2px solid #004f4f;
+    border-right: 2px solid #6effa3;
     padding-right: 5px;
     animation: blink-caret 0.5s step-end infinite;
-    color: #004f4f;
+    color: #6effa3;
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #00dddd; }
+    50% { border-color: #e0e3e2; }
 }
 
 @keyframes float {
