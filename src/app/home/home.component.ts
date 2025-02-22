@@ -7,11 +7,13 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { slideInAnimation } from '../../animations';
 @Component({
   selector: 'app-home',
   imports: [RouterLink,FontAwesomeModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations: [slideInAnimation]
 })
 export class HomeComponent implements OnInit {
  
