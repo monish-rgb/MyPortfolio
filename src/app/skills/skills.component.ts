@@ -8,6 +8,7 @@ import { faAws, faGoogle, faMicrosoft,
   faGit, faAngular 
  } from '@fortawesome/free-brands-svg-icons';
 import { faCloud,faDatabase,faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 registerSwiperElements();
 @Component({
   selector: 'app-skills',
@@ -41,4 +42,8 @@ export class SkillsComponent {
     { name: 'React', icon: faReact, delay: '1.2s' },
     { name: 'Angular', icon: faAngular, delay: '1.4s' }
   ];
+  cloud_tools=[
+    {name:'aws',icon:faAws,delay:'0s'},
+    {name:'git',icon:faGit,delay:'0.2s'},
+  ]
 }

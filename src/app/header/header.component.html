@@ -1,20 +1,4 @@
 <nav [ngClass]="isScrolled ? 'navbar-scrolled' : 'navbar-top'">
-    <!--
-    <div class="nav-links">
-        <a routerLink="/home" fragment="home" routerLinkActive="text-light" class="nav-item">
-            Home
-       </a>
-       <a routerLink="/about" fragment="about" routerLinkActive="text-light" class="nav-item">
-        About
-     </a>
-        <a routerLink="/works" fragment="works" routerLinkActive="text-light" class="nav-item">
-            Works
-       </a>
-        <a routerLink="/contact" fragment="contact" routerLinkActive="text-light" class="nav-item">
-            Contact
-       </a>
-    </div>
-    -->
     <ul class="nav-links">
         <li>
             <a routerLink="/home" fragment="home" routerLinkActive="text-light" style="gap: 15px;">
@@ -23,10 +7,17 @@
     </li>
         <li><a routerLink="/about" fragment="about" routerLinkActive="text-light" style="gap: 15px;">
             <fa-icon [icon]="faPerson"></fa-icon>  About
-         </a></li>
+         </a>
+        </li>
         <li>  <a routerLink="/works" fragment="works" routerLinkActive="text-light" style="gap: 10px;">
-           <fa-icon [icon]="faBriefcase"></fa-icon>  Works
-       </a></li>
+           <fa-icon [icon]="faCode"></fa-icon>  Projects
+       </a>
+        </li>
+        <li>
+            <a routerLink="/exp" fragment="exp" routerLinkActive="text-light" style="gap: 10px;">
+                <fa-icon [icon]="faBriefcase"></fa-icon>  Experience
+           </a>
+           </li>  
        <li>
         <a routerLink="/contact" fragment="contact" routerLinkActive="text-light" style="gap: 10px;">
            <fa-icon [icon]="faContact"></fa-icon>  Contact

@@ -5,10 +5,29 @@
 </div> -->
 
 <div class="tech-stack">
-    <h1 class="title">My Skills.</h1>
+    <h1 class="title">TechStack</h1>
     <div class="icons-container">
       <div *ngFor="let tech of techStack" class="icon" [ngStyle]="{'animation-delay': tech.delay}">
         <fa-icon [icon]="tech.icon" ></fa-icon>
+      </div>      
+    </div>
+    <h3 class="title">Services.</h3>
+    <div class="icons-container">
+      <div *ngFor="let tech of cloud_tools" class="icon" [ngStyle]="{'animation-delay': tech.delay}">
+        <fa-icon [icon]="tech.icon" ></fa-icon>
+      </div>
+    </div>
+    <h3 class="title">Licesnses And Certifications</h3>
+    <div class="icons-container">
+      <div class="buttons">
+        <a href="https://www.credly.com/badges/880def20-aef4-4268-bb51-210d93e904f0/linked_in_profile">
+          <button >AWS Cloud Quest</button>
+          </a>
+      </div>
+      <div class="buttons">
+        <a href="https://learn.microsoft.com/en-us/users/monishsrisaidevineni-1794/credentials/b543b6d3a2a659b7?ref=https%3A%2F%2Fwww.linkedin.com%2F">
+          <button >Azure Fundamentals</button>
+          </a>
       </div>
     </div>
   </div>
