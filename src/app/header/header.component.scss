@@ -1,41 +1,29 @@
-/* Common navbar styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 10%;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.5s ease-in-out;
-    padding-left: 600px;
-    @media (max-width: 768px) {
-      flex-direction: column; // Stack items in mobile
-      width: 90%;
-    }
-  }
-  
-  /* 🟢 Transparent Navbar (Home - Before Scroll) */
-  .navbar-top {   
-    background: transparent;
-    box-shadow: none;
-    @media (max-width: 768px) {
-      flex-direction: column; // Stack items in mobile
-      width: 90%;
-    }
-  }
+
 .navbar-scrolled {
-    border: solid #f6f4f4; /* Adjust thickness and color */
-    box-shadow: #101414;
-    top: 20px;
-    background: rgba(37, 42, 41, 0.8);
-    backdrop-filter:  blur(5px) brightness(120%);
-    align-items: center;
-    padding: 4px 8px;
-    border-radius: 50px;
-    left: 35em;
-    width: 30em;
-    transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: rgba(37, 42, 41, 0.8);
+  backdrop-filter:  blur(5px) brightness(120%);
+  width: fit-content;
+  margin: auto;
+  flex-wrap: wrap;
+  border: solid #f6f4f4;
+  box-shadow: #101414;
+    // border: solid #f6f4f4; /* Adjust thickness and color */
+    // box-shadow: #101414;
+    // top: 20px;
+    // background: rgba(37, 42, 41, 0.8);
+    // backdrop-filter:  blur(5px) brightness(120%);
+    // align-items: center;
+    // padding: 4px 8px;
+    // border-radius: 50px;
+    // left: 35em;
+    // width: 30em;
+    // transform: translateX(-50%);
+    // flex-wrap: wrap;
 
     .nav-links {
         display: flex;
@@ -63,28 +51,28 @@ nav {
 
   }
 
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
+  // .nav-links {
+  //   display: flex;
+  //   list-style: none;
+  // }
 
-  .nav-links li {
-    margin: 0 15px;
-  }
+  // .nav-links li {
+  //   margin: 0 15px;
+  // }
   
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
-  }
+  // .nav-links a {
+  //   text-decoration: none;
+  //   color: white;
+  //   font-weight: 500;
+  //   transition: 0.3s;
+  // }
   
-  .nav-links a:hover {
-    color:#7efe7e;
-  }
+  // .nav-links a:hover {
+  //   color:#7efe7e;
+  // }
 
-  .nav-links fa-icon{
-    opacity: 0.5;
-  }
+  // .nav-links fa-icon{
+  //   opacity: 0.5;
+  // }
 
  
