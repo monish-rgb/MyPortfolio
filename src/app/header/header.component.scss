@@ -9,12 +9,20 @@ nav {
     z-index: 1000;
     transition: all 0.5s ease-in-out;
     padding-left: 600px;
+    @media (max-width: 768px) {
+      flex-direction: column; // Stack items in mobile
+      width: 90%;
+    }
   }
   
   /* 🟢 Transparent Navbar (Home - Before Scroll) */
   .navbar-top {   
     background: transparent;
     box-shadow: none;
+    @media (max-width: 768px) {
+      flex-direction: column; // Stack items in mobile
+      width: 90%;
+    }
   }
 .navbar-scrolled {
     border: solid #f6f4f4; /* Adjust thickness and color */
@@ -48,6 +56,10 @@ nav {
       .nav-links a:hover {
         color: #7efe7e;
       }
+      @media (max-width: 768px) {
+        flex-direction: column; // Stack items in mobile
+        width: 90%;
+      }
 
   }
 
@@ -74,3 +86,5 @@ nav {
   .nav-links fa-icon{
     opacity: 0.5;
   }
+
+ 
