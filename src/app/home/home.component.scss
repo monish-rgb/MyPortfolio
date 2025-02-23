@@ -26,27 +26,29 @@
 /**************Profile pic*/
 
 .profile-container {
-  max-width: 100%; // Ensure it scales properly
-  width: 300px; // Default width
-  height: auto;
-  border-radius: 50% / 30%;
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  // position: absolute;
-  // right: 5%;
-  // top: 55%;
-  // transform: translateY(-50%);
-  // width: 300px; // Adjust width as needed
-  // height: 400px; // Adjust height as needed
-  // background: #ffffff; // Background color of the profile section
+  // max-width: 100%; // Ensure it scales properly
+  // width: 300px; // Default width
+  // height: auto;
   // border-radius: 50% / 30%;
+  // object-fit: cover;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
   // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  // overflow: hidden;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  // background: #ffffff; // Background color of the profile section
+  position: absolute;
+  right: 5%;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 300px; // Adjust width as needed
+  height: 400px; // Adjust height as needed
+  background: #ffffff; // Background color of the profile section
+  border-radius: 50% / 30%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 100%;

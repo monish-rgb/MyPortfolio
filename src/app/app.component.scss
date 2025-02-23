@@ -4,7 +4,7 @@
     margin-right: auto;
     text-align: justify;
     background: linear-gradient(to right, #0f1e0f, #000000, #01050c);
-  
+    
     // Medium screens (md: 768px and above)
     @media (min-width: 768px) {  
       padding-left: 2rem;  // md:px-8 (32px)
@@ -33,7 +33,7 @@
   
     // Extra large screens (xl: 1280px and above)
     @media (min-width: 1280px) {
-      padding-left: 20rem;
-      padding-right: 20rem;
+      padding-left: 30rem;
+      padding-right: 30rem;
     }
 }

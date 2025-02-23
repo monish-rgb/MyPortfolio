@@ -1,4 +1,4 @@
-<nav class="navbar-scrolled" @slideInAnimation>
+<nav [class.navbar-scrolled]="isScrolled" @slideInAnimation>
     <ul class="nav-links">
         <li>
             <a routerLink="/home" fragment="home" routerLinkActive="text-light" style="gap: 15px;">
