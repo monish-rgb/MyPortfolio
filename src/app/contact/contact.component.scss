@@ -81,13 +81,21 @@
           }
   
           input, textarea {
-            background: rgb(185, 185, 185);
+            //background: rgb(185, 185, 185);
             border: none;
             padding: 12px;
             margin-bottom: 15px;
             color: black;
-            border-radius: 5px;
+            //border-radius: 5px;
             font-size: 1rem;
+
+            border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
           }
   
           textarea {

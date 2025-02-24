@@ -124,31 +124,15 @@ nav {
   }
 }
 
-// Navbar animation
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.navbar-enter {
-  animation: slideIn 0.8s ease-in-out forwards;
-}
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px 15px;
   }
 
   ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
   }
 }

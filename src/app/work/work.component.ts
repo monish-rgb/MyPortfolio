@@ -28,13 +28,13 @@ export class WorkComponent implements AfterViewInit{
     },
     {
       title: 'Image Captioning Web App using Gemini',
-      description: 'A captioning and description of an uploaded image on this web application using Python Flask and LLM Model',
+      description: 'A captioning and description web application for images using Gemini and Flask.',
       image: 'assets/Image Captioning.png',
       link: 'https://github.com/monish-rgb/Image_Captioning_Web_App'
     },
     {
       title: 'Malware Classification Using CFGs',
-      description: "This project deals with Ransomware PE binary executable files Control Flow Graphs(CFG's) are extracted from these files using IDA Pro tool. ",
+      description: "This project deals with Ransomware executable files Control Flow Graphs(CFG's) are extracted and classified",
       image: 'assets/CFG.png',
       link: 'https://github.com/monish-rgb/Malware-Classification-Using-CFG'
     },
