@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root' // ✅ Ensures the service is available app-wide
 })
 export class ContactService {
-  private apiUrl = 'http://localhost:3000/contact_form'; // Your backend API URL
+  private apiUrl = 'https://myportfolio-etnx.onrender.com/contact_form'; // Your backend API URL
 
   constructor(private http: HttpClient) {}
 
