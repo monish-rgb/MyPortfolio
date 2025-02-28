@@ -7,6 +7,7 @@ import nodemailer from 'nodemailer';
 //const { MongoClient, ServerApiVersion } = require('mongodb');
 
 //const Contact = require('./contact.model.js'); // Import Mongoose model
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(cors());
@@ -25,17 +26,6 @@ const transporter = nodemailer.createTransport({
       rejectUnauthorized: false  // This allows self-signed certificates
   }
   });
-
-// // Define email options
-// const mailOptions = {
-//     from: 'your-email@gmail.com',
-//     to: 'recipient@example.com',
-//     subject: 'Test Email from Nodemailer',
-//     text: 'Hello! This is a test email sent using Nodemailer in Node.js',
-//     html: '<h1>Hello!</h1><p>This is a test email sent using <b>Nodemailer</b> in Node.js</p>'
-//   };
-
-
 
 //Define Contact Schema
 const ContactSchema = new mongoose.Schema({
@@ -80,4 +70,4 @@ app.get('/contact_form', (req, res) => {
     res.send('This is the GET /contact_form endpoint. Use POST to submit the form.');
   });
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
