@@ -1,0 +1,102 @@
+<section class="projects-section" id="works">
+    <!-- <div class="section-title">
+      <h4>Projects.</h4>
+    </div> 
+    <swiper-container
+    effect="cube" 
+    cube-effect-shadow="true"
+    pagination="true"
+    cube-effect-slide-shadows="true"
+    cube-effect-shadow-scale="0.9"
+    autoplay-delay="2000"
+    autoplay-disable-on-interaction="false"
+    #swiperEl
+    >
+      <swiper-slide *ngFor="let work of works" (mouseenter)="pauseSwiper()" (mouseleave)="resumeSwiper()">
+        <div class="project-card">
+          <img [src]="work.image" [alt]="work.title" class="project-image" />
+          <div class="project-info">
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.description }}</p>
+            <div>
+              <a [href]="work.link"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+            </div>
+          </div>
+        </div>    
+      </swiper-slide>
+    </swiper-container> -->
+<div>
+  <h1 style="color: #f6f4f4;font-size: 3rem;">Projects<span style="color: rgb(8, 247, 179);">.</span></h1>
+<div
+  class="slider"
+  style="--width: 190px;
+    --height: 230px;
+    --quantity: 5;"
+>
+  <div class="list">
+    <div class="item" style="--position: 1">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #01050c, #000000,#0f1e0f);"
+      >
+      <!-- <img [src]="work.image" [alt]="work.title" class="project-image" /> -->
+      <div class="project-info">
+        <h3>Portfolio Site</h3>
+        <p>A modern and sleek portfolio website built using MEAN stack</p>
+        <div>
+          <a href="https://monishdevineni.netlify.app/"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="item" style="--position: 2">
+      <div
+        class="card"
+        style="background: linear-gradient(to right,#0f1e0f, #000000,#01050c)"
+      >
+      <div class="project-info">
+        <h3>Image Captioning Web App using Gemini</h3>
+        <p>A captioning and description app of an image using LLM model and Flask as a web framework</p>
+        <div>
+          <a href="https://github.com/monish-rgb/Image_Captioning_Web_App"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+        </div>
+      </div>  
+      </div>
+    </div>
+    <div class="item" style="--position: 3">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #01050c, #000000,#0f1e0f)"
+      >
+      <div class="project-info">
+        <h3>Malware Classification Using CFGs</h3>
+        <p>This project deals with Ransomware executable files Control Flow Graphs(CFG's) are extracted and classified</p>
+        <div>
+          <a href="https://github.com/monish-rgb/Malware-Classification-Using-CFG"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="item" style="--position: 4">
+      <div
+        class="card"
+        style="background: linear-gradient(to right,#0f1e0f, #000000,#01050c)"
+      >
+      <div class="project-info">
+        <h3>Plant Disease Detection using Deep Learning</h3>
+        <p>Builded a Convolutional Neural Network model to detect plant diseases using TensorFlow and Keras.</p>
+        <div>
+          <a href="https://github.com/monish-rgb/ML-DL/tree/main/Plant%20Disease%20Detection"><fa-icon [icon]="fagithub" class="icon">Github</fa-icon></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </section>
+  
+  
+  
+  
+    

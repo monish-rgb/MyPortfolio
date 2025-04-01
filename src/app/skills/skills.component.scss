@@ -1,0 +1,113 @@
+.skills-page {
+  padding: 30px;
+  max-width: 1200px;
+  //background-color: #101414;
+  margin-bottom: -60px;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #e0e3e2;
+  margin-bottom: 30px;
+}
+.arrow {
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  display: inline-block;
+  color: #e0f0ff;
+  animation: bounce 1.5s infinite;
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+  background: radial-gradient(circle, #6effa3,#50f8c0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: float 3s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+/***************************************/
+
+.tech-stack {
+  text-align: center;
+  padding: 40px;
+  //background-color: #0a0a0a;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e0e3e2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon img {
+  width: 60%;
+  height: auto;
+}
+
+.buttons {
+  display: flex; /* Arrange buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  justify-content: left; /* Center buttons horizontally */
+  padding-bottom: 20px;
+}
+
+.buttons button {
+  background: linear-gradient(to right, #3ff7aa, #025e41); /* Gradient background */
+  color: black;
+  padding: 10px 15px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth background transition */
+  display: flex; /* Use flexbox for icon and text alignment */
+  align-items: center; /* Vertically align icon and text */
+  gap: 10px; /* Space between icon and text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.buttons button:hover {
+  background: linear-gradient(to right,#626263,#f5f4f6); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow */
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

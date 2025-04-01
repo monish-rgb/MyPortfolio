@@ -1,0 +1,20 @@
+<div class="container" id="home">
+  <div class="floating-squares"></div>
+    <div class="text-left" @slideInAnimation>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/monish-devineni/"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+        <a href="https://github.com/monish-rgb"><fa-icon [icon]="faGithub"></fa-icon></a>
+      </div>
+      <h1 class="home-title">Hi, I'm Monish Devineni</h1>
+      <h2 class="home-author">I'm a <span id="dynamic-text" class="typed"></span></h2>
+      <div class="buttons">
+        <button (click)="seeResume()">
+          <fa-icon [icon]="faFileAlt"></fa-icon> See My Resume
+        </button>
+      </div>
+    </div>
+    <div class="profile-container">
+      <img src="/assets/Monish_Portfolio Image.jpg" alt="Monish Devineni"/>
+    </div>
+</div>
+

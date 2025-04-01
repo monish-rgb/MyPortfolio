@@ -1,0 +1,137 @@
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    visibility: hidden;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .about-container {
+    display: flex;
+    margin-bottom: -50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 20px;
+    // background-color: #0a0a0a;
+    //background: linear-gradient(to right, #0f1e0f, #000000, #01050c);
+  }
+  
+  /* Left section styling 
+  .left-section {
+    flex: 1;
+    text-align: left;
+  }
+  */
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e0e3e2;
+  }
+  
+  /* Right section styling */
+  .right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e0e3e2;
+  }
+  
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e3e2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-section {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .right-section {
+      text-align: center;
+    }
+  }
+
+  .glitch-wrapper {
+    position: relative; /* Needed for absolute positioning of glitch elements */
+    width: fit-content; /* Adjust as needed */
+    overflow: hidden; /* Hide the overflowing glitch elements */
+    flex: 1;
+    text-align: left;
+  }
+  
+  .glitch-text {
+    font-size: 3em; /* Adjust as needed */
+    animation: glitch 1s linear infinite; /* Apply glitch animation */
+    position: relative; /* For positioning the pseudo-elements */
+    color: #e0e3e2;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-glitch); /* Use the data-glitch attribute for content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    overflow: hidden;
+    animation: glitch 2s linear infinite; /* Different animation for each pseudo-element */
+  }
+  
+  .glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 #004f4f; /* Red glitch effect */
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 70%); /* Adjust clip path for glitch shape */
+  }
+  
+  .glitch-text::after {
+    left: -2px;
+    text-shadow: 2px 0 #004f4f; /* Blue glitch effect */
+    clip-path: polygon(0 15%, 100% 65%, 100% 100%, 0 100%); /* Adjust clip path for glitch shape */
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-0.5%, 0.5%); /* Tiny shift */
+    }
+    40% {
+      transform: translate(0.5%, -0.2%); /* Tiny shift */
+    }
+    60% {
+      transform: translate(-0.2%, 0.3%); /* Tiny shift */
+    }
+    80% {
+      transform: translate(0.3%, -0.4%); /* Tiny shift */
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
