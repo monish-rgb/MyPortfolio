@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const uri = "mongodb+srv://monish:1234565997@portfolio.tpvxj.mongodb.net/?retryWrites=true&w=majority&appName=portfolio";
+const uri = "mongodb+srv://username:pwd7@portfolio.tpvxj.mongodb.net/?retryWrites=true&w=majority&appName=portfolio";
 mongoose.connect(uri);
 
 const transporter = nodemailer.createTransport({
